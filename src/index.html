@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>StudySync</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="headSection">
+        <h1>StudySync</h1>
+      <h5>Effortlessly Manage Your Tasks</h5>
+      </div>
+      <div id="courseSection">
+
+      </div>
+    </div>
+
+    <script>
+        fetch('http://localhost:4000/getCourseDetails')
+        .then((res)=>res.json())
+        .then((data)=>{
+            console.log('Fetched Data', data);
+            const courseSection=document.getElementById('courseSection');
+            courseSection.innerHTML='',
+            data.forEach(course=>{
+                const courseDiv=document.createElement('div');
+                courseDiv.id = 'courseDivId';
+                courseDiv.innerHTML=`
+                <h3>${course.courseName}</h3>
+                <p>Course ID: ${course.courseId}</p>
+                <p>Instructor: ${course.instructor}</p>
+                <p>Start Date: ${course.startDate}</p>
+                <p>End Date: ${course.endDate}</p>
+                <p>Total Hours: ${course.totalHours}</p>
+                <p>Course Description: ${course.description}</p>
+                <div id="btnsDiv">
+                  <a href="/addTask" ><button id="addBtn">Add Task to this course</button></a>
+                <a onClick="showTasks('${course.courseId}')" ><button id="showBtn">Show tasks of this course</button></a>
+                  </div>
+                <div id="tasks-${course.courseId}" style="display: none;"></div>
+                `
+                courseSection.appendChild(courseDiv);
+            })
+        })
+        .catch((e)=>console.log(e))
+
+        const showTasks=async (courseId)=>{
+          const tasksContainer = document.getElementById(`tasks-${courseId}`);
+        if (tasksContainer.style.display === 'none') {
+          try {
+            const response = await fetch('http://localhost:4000/getTaskDetails/' + courseId, {
+              method: 'GET',
+            });
+            const data = await response.json();
+            console.log(data);
+            tasksContainer.innerHTML = ''; // Clear previous tasks
+            data.forEach((task) => {
+              const taskDiv = document.createElement('div');
+              taskDiv.id = 'taskDivId';
+              taskDiv.innerHTML = `
+                <p>Task Name: ${task.taskName}</p>
+                <p>Priority: ${task.priority}</p>
+                <p>Deadline: ${task.deadline}</p>
+                <p>Description: ${task.description}</p>
+                <button onclick="deleteTask('${task.taskName}')">Delete</button>
+              `;
+              tasksContainer.appendChild(taskDiv);
+            });
+            tasksContainer.style.display = 'block'; // Show tasks container
+          } catch (e) {
+            console.log(e);
+          }
+        } else {
+          tasksContainer.style.display = 'none'; // Hide tasks container
+        }
+         }
+      const deleteTask=async(taskName)=>{
+        try{
+            const response=await fetch('http://localhost:4000/deleteTask/' + taskName, {
+                method:'DELETE'
+            });
+            const data=await response.json();
+    
+            //refresh
+            location.reload();
+        }
+        catch(e){
+            console.log(e);
+        }
+      }   
+    </script>
+  </body>
+</html>

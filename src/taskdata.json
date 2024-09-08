@@ -1,0 +1,143 @@
+[
+    {
+      "courseId": "1",
+      "taskName": "Complete HTML Exercise",
+      "priority": "high",
+      "deadline": "2024-03-10",
+      "description": "Finish all exercises from the HTML course."
+    },
+    {
+      "courseId": "2",
+      "taskName": "Design CSS Layout",
+      "priority": "medium",
+      "deadline": "2024-04-15",
+      "description": "Create a responsive layout using CSS grid and flexbox."
+    },
+    {
+      "courseId": "3",
+      "taskName": "JavaScript Project",
+      "priority": "high",
+      "deadline": "2024-05-20",
+      "description": "Develop a small JavaScript project demonstrating basic concepts."
+    },
+    {
+      "courseId": "4",
+      "taskName": "React Component Development",
+      "priority": "high",
+      "deadline": "2024-06-25",
+      "description": "Build reusable React components for a web application."
+    },
+    {
+      "courseId": "5",
+      "taskName": "Python Coding Assignment",
+      "priority": "medium",
+      "deadline": "2024-07-30",
+      "description": "Complete a coding assignment using Python programming language."
+    },
+    {
+      "courseId": "6",
+      "taskName": "Implement Data Structures",
+      "priority": "high",
+      "deadline": "2024-08-05",
+      "description": "Implement common data structures such as arrays, linked lists, and stacks."
+    },
+    {
+      "courseId": "7",
+      "taskName": "Machine Learning Model",
+      "priority": "high",
+      "deadline": "2024-09-10",
+      "description": "Develop a machine learning model using Python libraries."
+    },
+    {
+      "courseId": "8",
+      "taskName": "Deploy Web Application",
+      "priority": "high",
+      "deadline": "2024-10-15",
+      "description": "Deploy a full-stack web application to a hosting platform."
+    },
+    {
+      "courseId": "9",
+      "taskName": "Cybersecurity Assessment",
+      "priority": "high",
+      "deadline": "2024-11-20",
+      "description": "Conduct a cybersecurity assessment on a web application."
+    },
+    {
+      "courseId": "10",
+      "taskName": "Blockchain Implementation",
+      "priority": "high",
+      "deadline": "2024-12-25",
+      "description": "Implement a blockchain-based solution for a specific use case."
+    },
+    {
+      "courseId": "11",
+      "taskName": "Mobile App Prototyping",
+      "priority": "medium",
+      "deadline": "2025-01-05",
+      "description": "Create wireframes and prototypes for a mobile application."
+    },
+    {
+      "courseId": "12",
+      "taskName": "Deploy Cloud Service",
+      "priority": "high",
+      "deadline": "2025-02-10",
+      "description": "Deploy a cloud-based service on a cloud platform."
+    },
+    {
+      "courseId": "13",
+      "taskName": "Big Data Analysis",
+      "priority": "high",
+      "deadline": "2025-03-15",
+      "description": "Analyze large datasets using big data analytics tools and techniques."
+    },
+    {
+      "courseId": "14",
+      "taskName": "AI Model Training",
+      "priority": "high",
+      "deadline": "2025-04-20",
+      "description": "Train a deep learning model for a specific AI application."
+    },
+    {
+      "courseId": "15",
+      "taskName": "Penetration Testing",
+      "priority": "high",
+      "deadline": "2025-05-25",
+      "description": "Conduct penetration testing on a web application to identify vulnerabilities."
+    },
+    {
+      "courseId": "16",
+      "taskName": "UI/UX Design Refinement",
+      "priority": "medium",
+      "deadline": "2025-06-30",
+      "description": "Refine user interface and user experience design based on feedback."
+    },
+    {
+      "courseId": "17",
+      "taskName": "Software Development Sprint",
+      "priority": "high",
+      "deadline": "2025-07-05",
+      "description": "Complete a sprint of software development tasks following agile principles."
+    },
+    {
+      "courseId": "18",
+      "taskName": "IoT Device Prototyping",
+      "priority": "high",
+      "deadline": "2025-08-10",
+      "description": "Prototype an Internet of Things (IoT) device using hardware and software components."
+    },
+    {
+      "courseId": "19",
+      "taskName": "Implement CI/CD Pipeline",
+      "priority": "high",
+      "deadline": "2025-09-15",
+      "description": "Implement a continuous integration and continuous deployment (CI/CD) pipeline for a project."
+    },
+    {
+      "courseId": "20",
+      "taskName": "Game Development Milestone",
+      "priority": "high",
+      "deadline": "2025-10-20",
+      "description": "Achieve a milestone in the development of a game project."
+    }
+  ]
+  
