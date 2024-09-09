@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StudySync</title>
+</head>
+<body>
+    <div id="container">
+      <div id="headSection">
+        <h1>StudySync</h1>
+      <h5>Effortlessly Manage Your Tasks</h5>
+      </div>
+
+        <form id="taskForm" action="/taskDetails" method="POST">
+            <div id="first">
+                <label for="courseid">Course ID</label>
+                <input type="text" id="courseid" name="courseId" placeholder="Enter course Id" />
+            </div>
+            <div id="second">
+                <label for="taskname">Task Name</label>
+                <input type="text" id="taskname" name="taskName" placeholder="Enter task Name" />
+            </div>
+            <div id="third">
+                <label>Priority:</label><br />
+                <input type="radio" id="high" name="priority" value="high" />
+                <label for="high">High</label><br />
+                <input type="radio" id="medium" name="priority" value="medium" />
+                <label for="medium">Medium</label><br />
+                <input type="radio" id="low" name="priority" value="low" />
+                <label for="low">Low</label><br />
+            </div>
+            <div id="fourth">
+                <label for="deadline">Deadline</label>
+                <input type="date" id="deadline" name="deadline" />
+            </div>
+            <div id="fifth">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description" placeholder="Write Description" />
+            </div>
+            <button type="submit">Add Task</button>
+        </form>
+        <a href="/"><button id="backToHome">Go to Course Page >>></button></a>
+    </div>
+
+    <script>
+        document.getElementById('taskForm').addEventListener('submit', async (event) => {
+          event.preventDefault(); // Prevent the default form submission
+            const formData = new FormData(event.target); // Get form data
+            const formObject = {};
+            formData.forEach((value, key) => {
+                formObject[key] = value;
+            });
+            try {
+                const response = await fetch('/taskDetails', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formObject) // Convert form data to JSON
+                });
+                const data = await response.json();
+                console.log(data); // Log response from the server
+                // You can redirect the user or show a success message here
+                document.getElementById('taskForm').reset();
+            } catch (error) {
+                console.error(error);
+                // Handle error
+            }
+        });
+    </script>
+</body>
+</html>

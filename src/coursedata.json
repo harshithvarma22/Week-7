@@ -1,0 +1,183 @@
+[
+    {
+      "courseId": "1",
+      "courseName": "Basic HTML",
+      "instructor": "Mr. HTML",
+      "startDate": "2024-03-01",
+      "endDate": "2024-03-31",
+      "totalHours": 20,
+      "description": "This is beginner friendly, designed to introduce HTML concepts in a clear and accessible manner."
+    },
+    {
+      "courseId": "2",
+      "courseName": "CSS Fundamentals",
+      "instructor": "Ms. CSS",
+      "startDate": "2024-04-01",
+      "endDate": "2024-04-30",
+      "totalHours": 25,
+      "description": "Learn the fundamentals of CSS, including selectors, properties, and layout techniques."
+    },
+    {
+      "courseId": "3",
+      "courseName": "JavaScript Basics",
+      "instructor": "Dr. JavaScript",
+      "startDate": "2024-05-01",
+      "endDate": "2024-05-31",
+      "totalHours": 30,
+      "description": "An introductory course covering basic JavaScript syntax, data types, and control structures."
+    },
+    {
+      "courseId": "4",
+      "courseName": "React Development",
+      "instructor": "Prof. React",
+      "startDate": "2024-06-01",
+      "endDate": "2024-06-30",
+      "totalHours": 40,
+      "description": "Dive into React development with hands-on projects, state management, and component-based architecture."
+    },
+    {
+      "courseId": "5",
+      "courseName": "Python Programming",
+      "instructor": "Python Guru",
+      "startDate": "2024-07-01",
+      "endDate": "2024-07-31",
+      "totalHours": 35,
+      "description": "Learn Python programming from scratch and explore its applications in various domains."
+    },
+    {
+      "courseId": "6",
+      "courseName": "Data Structures and Algorithms",
+      "instructor": "Algo Master",
+      "startDate": "2024-08-01",
+      "endDate": "2024-08-31",
+      "totalHours": 45,
+      "description": "Master the fundamentals of data structures and algorithms for efficient problem-solving."
+    },
+    {
+      "courseId": "7",
+      "courseName": "Machine Learning Essentials",
+      "instructor": "ML Expert",
+      "startDate": "2024-09-01",
+      "endDate": "2024-09-30",
+      "totalHours": 50,
+      "description": "Introduction to machine learning concepts, algorithms, and applications."
+    },
+    {
+      "courseId": "8",
+      "courseName": "Web Development Bootcamp",
+      "instructor": "Dev Mentor",
+      "startDate": "2024-10-01",
+      "endDate": "2024-10-31",
+      "totalHours": 60,
+      "description": "Comprehensive bootcamp covering full-stack web development with HTML, CSS, JavaScript, and backend technologies."
+    },
+    {
+      "courseId": "9",
+      "courseName": "Cybersecurity Fundamentals",
+      "instructor": "Cyber Guru",
+      "startDate": "2024-11-01",
+      "endDate": "2024-11-30",
+      "totalHours": 35,
+      "description": "Introduction to cybersecurity principles, techniques, and best practices."
+    },
+    {
+      "courseId": "10",
+      "courseName": "Blockchain Technology",
+      "instructor": "Blockchain Expert",
+      "startDate": "2024-12-01",
+      "endDate": "2024-12-31",
+      "totalHours": 40,
+      "description": "Exploration of blockchain technology, cryptocurrencies, and decentralized applications."
+    },
+    {
+      "courseId": "11",
+      "courseName": "Mobile App Development",
+      "instructor": "App Dev Pro",
+      "startDate": "2025-01-01",
+      "endDate": "2025-01-31",
+      "totalHours": 45,
+      "description": "Learn to build mobile apps for iOS and Android platforms using modern frameworks and tools."
+    },
+    {
+      "courseId": "12",
+      "courseName": "Cloud Computing Fundamentals",
+      "instructor": "Cloud Expert",
+      "startDate": "2025-02-01",
+      "endDate": "2025-02-28",
+      "totalHours": 30,
+      "description": "Introduction to cloud computing concepts, services, and deployment models."
+    },
+    {
+      "courseId": "13",
+      "courseName": "Big Data Analytics",
+      "instructor": "Big Data Analyst",
+      "startDate": "2025-03-01",
+      "endDate": "2025-03-31",
+      "totalHours": 40,
+      "description": "Explore big data analytics techniques, tools, and platforms for extracting insights from large datasets."
+    },
+    {
+      "courseId": "14",
+      "courseName": "Artificial Intelligence",
+      "instructor": "AI Specialist",
+      "startDate": "2025-04-01",
+      "endDate": "2025-04-30",
+      "totalHours": 50,
+      "description": "Introduction to artificial intelligence concepts, algorithms, and applications."
+    },
+    {
+      "courseId": "15",
+      "courseName": "Ethical Hacking",
+      "instructor": "Ethical Hacker",
+      "startDate": "2025-05-01",
+      "endDate": "2025-05-31",
+      "totalHours": 35,
+      "description": "Learn ethical hacking techniques, penetration testing, and vulnerability assessment."
+    },
+    {
+      "courseId": "16",
+      "courseName": "UI/UX Design",
+      "instructor": "Design Expert",
+      "startDate": "2025-06-01",
+      "endDate": "2025-06-30",
+      "totalHours": 40,
+      "description": "Introduction to user interface and user experience design principles, processes, and tools."
+    },
+    {
+      "courseId": "17",
+      "courseName": "Software Engineering",
+      "instructor": "Software Engineer",
+      "startDate": "2025-07-01",
+      "endDate": "2025-07-31",
+      "totalHours": 45,
+      "description": "Study software engineering methodologies, software development lifecycle, and project management."
+    },
+    {
+      "courseId": "18",
+      "courseName": "IoT Development",
+      "instructor": "IoT Specialist",
+      "startDate": "2025-08-01",
+      "endDate": "2025-08-31",
+      "totalHours": 35,
+      "description": "Explore Internet of Things (IoT) concepts, devices, and applications."
+    },
+    {
+      "courseId": "19",
+      "courseName": "DevOps Essentials",
+      "instructor": "DevOps Engineer",
+      "startDate": "2025-09-01",
+      "endDate": "2025-09-30",
+      "totalHours": 40,
+      "description": "Introduction to DevOps practices, tools, and automation for efficient software development and deployment."
+    },
+    {
+      "courseId": "20",
+      "courseName": "Game Development",
+      "instructor": "Game Developer",
+      "startDate": "2025-10-01",
+      "endDate": "2025-10-31",
+      "totalHours": 50,
+      "description": "Learn game development principles, game engines, and programming languages for creating interactive games."
+    }
+  ]
+  

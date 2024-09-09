@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anta&family=Barriecito&family=Dancing+Script:wght@400..700&family=Fredoka:wght@300..700&family=Madimi+One&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    width: 60%;
+   margin: 0 auto;
+}
+
+#headSection{
+    background-color: purple;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#headSection h1, h5{
+   padding: 5px;
+   margin: 0 auto;
+}
+
+#courseDivId{
+    border: 1px solid rgb(34, 4, 34);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+   display: flex;
+   flex-direction: column;
+}
+
+#taskDivId{
+    background-color:rgb(169, 111, 169);
+    border-top: 2px solid purple;
+    border-bottom: 2px solid purple;
+    padding: 10px;
+    color: white;
+    margin-top: 10px;
+}
+
+#taskDivId button{
+    padding: 5px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#courseDivId h3{
+  margin: 0 auto;
+}
+
+#btnsDiv{
+    display: flex;
+    flex-direction: row;
+}
+
+#addBtn, #showBtn{
+    background-color:rgb(169, 111, 169);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#addBtn:hover, #showBtn:hover{
+    background-color:rgb(107, 62, 107);
+    color: white;
+}
+
+#courseDivId p,a{
+margin: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid  rgb(34, 4, 34);
+}
+
+form div{
+    padding: 10px;
+}
+
+form button{
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    background-color:rgb(169, 111, 169);
+    color: white;
+}
+
+#backToHome{
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+    border: 1px solid rgb(34, 4, 34);
+    color: rgb(34, 4, 34);
+}
